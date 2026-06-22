@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questions</title>
+    <link rel="stylesheet"
+    href="{{ url_for('static',filename='style.css')}}">
+</head>
+
+
+<body>
+    <div class="container">
+
+        <h1>Generated Questions</h1>
+
+        <div class="questions">
+            {{ questions | safe }}
+        </div>
+
+        <a href="/">
+        <button>Go Back</button>
+        </a>
+
+
+    </div>
+</body>
+</html>

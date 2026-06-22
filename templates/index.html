@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZPrep AI</title>
+    <link rel="stylesheet"
+    href="{{ url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>ZPrep AI</h1>
+        <h3>AI Powered Interview Preparation</h3>
+
+        <form action="/generate" method="POST" enctype="multipart/form-data">
+            <div class="form-content">
+                <input type="file" name="resume" required>
+
+                <button type="submit">
+                    Generate Questions
+                </button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
